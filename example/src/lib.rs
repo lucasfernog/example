@@ -21,7 +21,7 @@ pub fn pid() -> Pid {
 // Specifically dumb function, just to trigger clippy
 pub fn pid_is_valids(pid: Pid) -> bool {
     let pid = pid as u32;
-    if pid < -5 {
+    if pid < 0 {
         return false;
     } else {
         return true;
